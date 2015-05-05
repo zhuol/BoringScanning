@@ -3,14 +3,14 @@
 
 import socket
 
-hosts = ['127.0.0.1', 'google.com']
-ports = [22, 445, 80, 443, 3389]
-s = socket.socket()
+hosts = ['127.0.0.1', 'localhost']
+ports = [20, 22, 80, 443, 3389]
 
 for host in hosts:
 	for port in ports:
-	#for port in range(20, 100, 3):
+	#for port in range(20, 443, 2):
 		try:
+			s = socket.socket()
 			print "[+] Connecting to  "+host+":"+str(port)
 			s.connect((host, port))
 			s.send('Primal Security \n')		
