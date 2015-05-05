@@ -1,4 +1,5 @@
 #! /usr/bin python
+# -*- coding: utf-8 -*-
 
 hosts = ['127.0.0.1']
 ports = [22, 445, 80, 443, 3389]
